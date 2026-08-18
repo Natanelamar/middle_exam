@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "unitName": "Special Ops 214",
+    "sector": "Northern Sector"
+  },
+  {
+    "id": 2,
+    "unitName": "Forward Base 381",
+    "sector": "Eastern Sector"
+  },
+  {
+    "id": 3,
+    "unitName": "Northern Patrol 242",
+    "sector": "Northern Sector"
+  },
+  {
+    "id": 4,
+    "unitName": "Special Ops 858",
+    "sector": "Coastal Sector"
+  },
+  {
+    "id": 5,
+    "unitName": "Observation Unit 704",
+    "sector": "Central Sector"
+  },
+  {
+    "id": 6,
+    "unitName": "Recon Unit 130",
+    "sector": "Northern Sector"
+  },
+  {
+    "id": 7,
+    "unitName": "Northern Patrol 338",
+    "sector": "Coastal Sector"
+  },
+  {
+    "id": 8,
+    "unitName": "Tactical Unit 127",
+    "sector": "Coastal Sector"
+  },
+  {
+    "id": 9,
+    "unitName": "Northern Patrol 833",
+    "sector": "Coastal Sector"
+  },
+  {
+    "id": 10,
+    "unitName": "Mountain Guard 325",
+    "sector": "Central Sector"
+  },
+  {
+    "id": 11,
+    "unitName": "Tactical Unit 384",
+    "sector": "Northern Sector"
+  },
+  {
+    "id": 12,
+    "unitName": "Perimeter Guard 925",
+    "sector": "Eastern Sector"
+  },
+  {
+    "id": 13,
+    "unitName": "Forward Base 532",
+    "sector": "Southern Sector"
+  },
+  {
+    "id": 14,
+    "unitName": "Field Intelligence 259",
+    "sector": "Eastern Sector"
+  },
+  {
+    "id": 15,
+    "unitName": "Perimeter Guard 444",
+    "sector": "Northern Sector"
+  },
+  {
+    "id": 16,
+    "unitName": "Observation Unit 489",
+    "sector": "Northern Sector"
+  },
+  {
+    "id": 17,
+    "unitName": "Coastal Watch 967",
+    "sector": "Southern Sector"
+  },
+  {
+    "id": 18,
+    "unitName": "Tactical Unit 370",
+    "sector": "Northern Sector"
+  },
+  {
+    "id": 19,
+    "unitName": "Forward Base 570",
+    "sector": "Coastal Sector"
+  },
+  {
+    "id": 20,
+    "unitName": "Observation Unit 487",
+    "sector": "Northern Sector"
+  },
+  {
+    "id": 21,
+    "unitName": "Urban Defense 400",
+    "sector": "Coastal Sector"
+  },
+  {
+    "id": 22,
+    "unitName": "Quick Response 982",
+    "sector": "Southern Sector"
+  },
+  {
+    "id": 23,
+    "unitName": "Tactical Unit 296",
+    "sector": "Northern Sector"
+  },
+  {
+    "id": 24,
+    "unitName": "Recon Unit 777",
+    "sector": "Eastern Sector"
+  },
+  {
+    "id": 25,
+    "unitName": "Perimeter Guard 396",
+    "sector": "Northern Sector"
+  },
+  {
+    "id": 26,
+    "unitName": "Surveillance Team 338",
+    "sector": "Northern Sector"
+  },
+  {
+    "id": 27,
+    "unitName": "Mountain Guard 384",
+    "sector": "Central Sector"
+  },
+  {
+    "id": 28,
+    "unitName": "Special Ops 954",
+    "sector": "Southern Sector"
+  },
+  {
+    "id": 29,
+    "unitName": "Border Defense 479",
+    "sector": "Southern Sector"
+  },
+  {
+    "id": 30,
+    "unitName": "Northern Patrol 786",
+    "sector": "Southern Sector"
+  },
+  {
+    "id": 31,
+    "unitName": "Forward Base 799",
+    "sector": "Northern Sector"
+  },
+  {
+    "id": 32,
+    "unitName": "Tactical Unit 750",
+    "sector": "Eastern Sector"
+  },
+  {
+    "id": 33,
+    "unitName": "Urban Defense 846",
+    "sector": "Eastern Sector"
+  },
+  {
+    "id": 34,
+    "unitName": "Border Defense 573",
+    "sector": "Central Sector"
+  },
+  {
+    "id": 35,
+    "unitName": "Field Intelligence 755",
+    "sector": "Coastal Sector"
+  },
+  {
+    "id": 36,
+    "unitName": "Northern Patrol 801",
+    "sector": "Southern Sector"
+  },
+  {
+    "id": 37,
+    "unitName": "Surveillance Team 886",
+    "sector": "Northern Sector"
+  },
+  {
+    "id": 38,
+    "unitName": "Northern Patrol 941",
+    "sector": "Northern Sector"
+  },
+  {
+    "id": 39,
+    "unitName": "Perimeter Guard 423",
+    "sector": "Central Sector"
+  },
+  {
+    "id": 40,
+    "unitName": "Field Intelligence 167",
+    "sector": "Eastern Sector"
+  },
+  {
+    "id": 41,
+    "unitName": "Quick Response 680",
+    "sector": "Southern Sector"
+  },
+  {
+    "id": 42,
+    "unitName": "Northern Patrol 771",
+    "sector": "Central Sector"
+  },
+  {
+    "id": 43,
+    "unitName": "Mountain Guard 758",
+    "sector": "Central Sector"
+  },
+  {
+    "id": 44,
+    "unitName": "Border Defense 371",
+    "sector": "Eastern Sector"
+  },
+  {
+    "id": 45,
+    "unitName": "Northern Patrol 862",
+    "sector": "Coastal Sector"
+  },
+  {
+    "id": 46,
+    "unitName": "Urban Defense 369",
+    "sector": "Coastal Sector"
+  },
+  {
+    "id": 47,
+    "unitName": "Mountain Guard 697",
+    "sector": "Central Sector"
+  },
+  {
+    "id": 48,
+    "unitName": "Coastal Watch 324",
+    "sector": "Eastern Sector"
+  },
+  {
+    "id": 49,
+    "unitName": "Urban Defense 605",
+    "sector": "Northern Sector"
+  },
+  {
+    "id": 50,
+    "unitName": "Perimeter Guard 148",
+    "sector": "Northern Sector"
+  },
+  {
+    "id": 51,
+    "unitName": "Border Defense 742",
+    "sector": "Eastern Sector"
+  },
+  {
+    "id": 52,
+    "unitName": "Perimeter Guard 796",
+    "sector": "Central Sector"
+  },
+  {
+    "id": 53,
+    "unitName": "Tactical Unit 165",
+    "sector": "Central Sector"
+  },
+  {
+    "id": 54,
+    "unitName": "Mountain Guard 710",
+    "sector": "Central Sector"
+  },
+  {
+    "id": 55,
+    "unitName": "Urban Defense 357",
+    "sector": "Coastal Sector"
+  },
+  {
+    "id": 56,
+    "unitName": "Surveillance Team 111",
+    "sector": "Northern Sector"
+  },
+  {
+    "id": 57,
+    "unitName": "Special Ops 649",
+    "sector": "Southern Sector"
+  },
+  {
+    "id": 58,
+    "unitName": "Perimeter Guard 756",
+    "sector": "Southern Sector"
+  },
+  {
+    "id": 59,
+    "unitName": "Observation Unit 400",
+    "sector": "Central Sector"
+  },
+  {
+    "id": 60,
+    "unitName": "Border Defense 564",
+    "sector": "Northern Sector"
+  },
+  {
+    "id": 61,
+    "unitName": "Forward Base 996",
+    "sector": "Southern Sector"
+  },
+  {
+    "id": 62,
+    "unitName": "Urban Defense 880",
+    "sector": "Eastern Sector"
+  },
+  {
+    "id": 63,
+    "unitName": "Urban Defense 208",
+    "sector": "Southern Sector"
+  },
+  {
+    "id": 64,
+    "unitName": "Surveillance Team 754",
+    "sector": "Coastal Sector"
+  },
+  {
+    "id": 65,
+    "unitName": "Tactical Unit 303",
+    "sector": "Eastern Sector"
+  },
+  {
+    "id": 66,
+    "unitName": "Coastal Watch 880",
+    "sector": "Eastern Sector"
+  },
+  {
+    "id": 67,
+    "unitName": "Urban Defense 897",
+    "sector": "Coastal Sector"
+  },
+  {
+    "id": 68,
+    "unitName": "Quick Response 100",
+    "sector": "Coastal Sector"
+  },
+  {
+    "id": 69,
+    "unitName": "Coastal Watch 600",
+    "sector": "Northern Sector"
+  },
+  {
+    "id": 70,
+    "unitName": "Observation Unit 471",
+    "sector": "Southern Sector"
+  },
+  {
+    "id": 71,
+    "unitName": "Northern Patrol 159",
+    "sector": "Eastern Sector"
+  },
+  {
+    "id": 72,
+    "unitName": "Observation Unit 187",
+    "sector": "Central Sector"
+  },
+  {
+    "id": 73,
+    "unitName": "Surveillance Team 170",
+    "sector": "Coastal Sector"
+  },
+  {
+    "id": 74,
+    "unitName": "Perimeter Guard 228",
+    "sector": "Eastern Sector"
+  },
+  {
+    "id": 75,
+    "unitName": "Special Ops 586",
+    "sector": "Coastal Sector"
+  },
+  {
+    "id": 76,
+    "unitName": "Urban Defense 993",
+    "sector": "Coastal Sector"
+  },
+  {
+    "id": 77,
+    "unitName": "Mountain Guard 316",
+    "sector": "Coastal Sector"
+  },
+  {
+    "id": 78,
+    "unitName": "Perimeter Guard 847",
+    "sector": "Eastern Sector"
+  },
+  {
+    "id": 79,
+    "unitName": "Forward Base 419",
+    "sector": "Central Sector"
+  },
+  {
+    "id": 80,
+    "unitName": "Special Ops 765",
+    "sector": "Southern Sector"
+  },
+  {
+    "id": 81,
+    "unitName": "Desert Patrol 629",
+    "sector": "Central Sector"
+  },
+  {
+    "id": 82,
+    "unitName": "Observation Unit 353",
+    "sector": "Eastern Sector"
+  },
+  {
+    "id": 83,
+    "unitName": "Observation Unit 446",
+    "sector": "Northern Sector"
+  },
+  {
+    "id": 84,
+    "unitName": "Tactical Unit 667",
+    "sector": "Eastern Sector"
+  },
+  {
+    "id": 85,
+    "unitName": "Tactical Unit 325",
+    "sector": "Northern Sector"
+  },
+  {
+    "id": 86,
+    "unitName": "Observation Unit 824",
+    "sector": "Northern Sector"
+  },
+  {
+    "id": 87,
+    "unitName": "Northern Patrol 169",
+    "sector": "Northern Sector"
+  },
+  {
+    "id": 88,
+    "unitName": "Surveillance Team 438",
+    "sector": "Northern Sector"
+  },
+  {
+    "id": 89,
+    "unitName": "Urban Defense 343",
+    "sector": "Southern Sector"
+  },
+  {
+    "id": 90,
+    "unitName": "Special Ops 597",
+    "sector": "Eastern Sector"
+  },
+  {
+    "id": 91,
+    "unitName": "Urban Defense 235",
+    "sector": "Coastal Sector"
+  },
+  {
+    "id": 92,
+    "unitName": "Tactical Unit 584",
+    "sector": "Eastern Sector"
+  },
+  {
+    "id": 93,
+    "unitName": "Perimeter Guard 584",
+    "sector": "Central Sector"
+  },
+  {
+    "id": 94,
+    "unitName": "Northern Patrol 196",
+    "sector": "Northern Sector"
+  },
+  {
+    "id": 95,
+    "unitName": "Special Ops 541",
+    "sector": "Southern Sector"
+  },
+  {
+    "id": 96,
+    "unitName": "Mountain Guard 520",
+    "sector": "Central Sector"
+  },
+  {
+    "id": 97,
+    "unitName": "Surveillance Team 846",
+    "sector": "Northern Sector"
+  },
+  {
+    "id": 98,
+    "unitName": "Special Ops 769",
+    "sector": "Northern Sector"
+  },
+  {
+    "id": 99,
+    "unitName": "Recon Unit 512",
+    "sector": "Southern Sector"
+  },
+  {
+    "id": 100,
+    "unitName": "Perimeter Guard 982",
+    "sector": "Northern Sector"
+  }
+]
