@@ -25,7 +25,5 @@ public class KafkaProducerService
             Value = json
         };
         await _producer.ProduceAsync(topic, messageToSend);
-
-        Console.WriteLine($"[{DateTime.Now:HH:mm:ss}] Sent to {topic}: {json.Substring(0, Math.Min(50, json.Length))}...");
     }
 }

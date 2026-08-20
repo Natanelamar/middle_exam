@@ -13,38 +13,38 @@ class Program
             .Build();
 
         var kafkaBootstrapServers = configuration["Kafka:BootstrapServers"];
-        var unitsTopic = configuration["Kafka:Topic:Units"];
-        var assetsTopic = configuration["Kafka:Topic:Assets"];
-        var assetsLiveStatusTopic = configuration["Kafka:Topic:AssetsLiveStatus"];
+        var uavTopic = configuration["Kafka:Topics:UAV"];
+        var perimeterSensorTopic = configuration["Kafka:Topics:PerimeterSensor"];
 
         var dataloader = new DataLoader();
-        var units = dataloader.LoadData<Unit>(configuration["DataFiles:UnitsPath"]!);
-        var assets = dataloader.LoadData<Asset>(configuration["DataFiles:AssetsPath"]!);
         var fieldReports = dataloader.LoadData<AssetLiveStatus>(configuration["DataFiles:FieldReportsPath"]!);
 
         var kafkaProducer = new KafkaProducerService(kafkaBootstrapServers!);
 
-        var maxCount = Math.Max(units.Count, Math.Max(assets.Count, fieldReports.Count));
+        int uavCount = 0;
+        int sensorCount = 0;
 
-        for (int i = 0; i < maxCount; i++)
+        foreach (var report in fieldReports)
         {
-            if (i < units.Count)
+            string topic = report.AssetType switch
             {
-                await kafkaProducer.SendMessageAsync(unitsTopic!, units[i]);
-            }
-            if (i < assets.Count)
-            {
-                await kafkaProducer.SendMessageAsync(assetsTopic!, assets[i]);
-            }
-            if (i < fieldReports.Count)
-            {
-                await kafkaProducer.SendMessageAsync(assetsLiveStatusTopic!, fieldReports[i]);
-            }
-            
-            await Task.Delay(3000);
-        }
-        Console.WriteLine("All messages sent!");
+                "UAV" => uavTopic!,
+                "PerimeterSensor" => perimeterSensorTopic!,
+                _ => throw new Exception($"Unknown asset type: {report.AssetType}")
+            };
 
-        
+            await kafkaProducer.SendMessageAsync(topic, report);
+
+            if (report.AssetType == "UAV")
+                uavCount++;
+            else
+                sensorCount++;
+        }
+
+        Console.WriteLine("All messages sent!");
+        Console.WriteLine($"  - UAV reports: {uavCount}");
+        Console.WriteLine($"  - Sensor reports: {sensorCount}");
+
+
     }
 }

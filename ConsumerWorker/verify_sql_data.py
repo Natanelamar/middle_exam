@@ -108,9 +108,9 @@ def verify_assets(json_data, sql_records):
     
     # Map AssetType to enum value
     type_map = {
-        'UAV': '0',
+        'UAV': '2',
         'PerimeterSensor': '1',
-        'GenericAsset': '2'
+        'GenericAsset': '0'
     }
     
     for i, json_asset in enumerate(json_data):
@@ -154,9 +154,9 @@ def main():
     
     # Paths
     base_dir = Path(__file__).parent.parent
-    units_json = base_dir / 'data' / 'units.json'
-    assets_json = base_dir / 'data' / 'assets.json'
-    sql_file = base_dir / 'ConsumerWorker' / 'seed_database.sql'
+    units_json = base_dir / 'ProducerService' / 'data' / 'units.json'
+    assets_json = base_dir / 'ProducerService' / 'data' / 'assets.json'
+    sql_file = Path(__file__).parent / 'seed_database.sql'
     
     # Check files exist
     for filepath in [units_json, assets_json, sql_file]:

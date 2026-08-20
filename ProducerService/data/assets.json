@@ -1,602 +1,602 @@
 [
   {
-    "id": 1,
-    "unitId": 1,
-    "assetSerial": "SENSOR-NORTH-872",
-    "assetType": "PerimeterSensor"
+    "Id": 1,
+    "UnitId": 1,
+    "AssetSerial": "SENSOR-NORTH-872",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 2,
-    "unitId": 1,
-    "assetSerial": "UAV-COAST-070",
-    "assetType": "UAV"
+    "Id": 2,
+    "UnitId": 1,
+    "AssetSerial": "UAV-COAST-070",
+    "AssetType": "UAV"
   },
   {
-    "id": 3,
-    "unitId": 2,
-    "assetSerial": "SENSOR-EAST-414",
-    "assetType": "PerimeterSensor"
+    "Id": 3,
+    "UnitId": 2,
+    "AssetSerial": "SENSOR-EAST-414",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 4,
-    "unitId": 3,
-    "assetSerial": "UAV-COAST-253",
-    "assetType": "UAV"
+    "Id": 4,
+    "UnitId": 3,
+    "AssetSerial": "UAV-COAST-253",
+    "AssetType": "UAV"
   },
   {
-    "id": 5,
-    "unitId": 3,
-    "assetSerial": "SENSOR-NORTH-635",
-    "assetType": "PerimeterSensor"
+    "Id": 5,
+    "UnitId": 3,
+    "AssetSerial": "SENSOR-NORTH-635",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 6,
-    "unitId": 4,
-    "assetSerial": "UAV-COAST-579",
-    "assetType": "UAV"
+    "Id": 6,
+    "UnitId": 4,
+    "AssetSerial": "UAV-COAST-579",
+    "AssetType": "UAV"
   },
   {
-    "id": 7,
-    "unitId": 4,
-    "assetSerial": "UAV-SOUTH-210",
-    "assetType": "UAV"
+    "Id": 7,
+    "UnitId": 4,
+    "AssetSerial": "UAV-SOUTH-210",
+    "AssetType": "UAV"
   },
   {
-    "id": 8,
-    "unitId": 4,
-    "assetSerial": "SENSOR-SOUTH-245",
-    "assetType": "PerimeterSensor"
+    "Id": 8,
+    "UnitId": 4,
+    "AssetSerial": "SENSOR-SOUTH-245",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 9,
-    "unitId": 5,
-    "assetSerial": "UAV-EAST-688",
-    "assetType": "UAV"
+    "Id": 9,
+    "UnitId": 5,
+    "AssetSerial": "UAV-EAST-688",
+    "AssetType": "UAV"
   },
   {
-    "id": 10,
-    "unitId": 5,
-    "assetSerial": "SENSOR-CENTRAL-324",
-    "assetType": "PerimeterSensor"
+    "Id": 10,
+    "UnitId": 5,
+    "AssetSerial": "SENSOR-CENTRAL-324",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 11,
-    "unitId": 5,
-    "assetSerial": "SENSOR-NORTH-010",
-    "assetType": "PerimeterSensor"
+    "Id": 11,
+    "UnitId": 5,
+    "AssetSerial": "SENSOR-NORTH-010",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 12,
-    "unitId": 6,
-    "assetSerial": "UAV-COAST-103",
-    "assetType": "UAV"
+    "Id": 12,
+    "UnitId": 6,
+    "AssetSerial": "UAV-COAST-103",
+    "AssetType": "UAV"
   },
   {
-    "id": 13,
-    "unitId": 6,
-    "assetSerial": "UAV-EAST-519",
-    "assetType": "UAV"
+    "Id": 13,
+    "UnitId": 6,
+    "AssetSerial": "UAV-EAST-519",
+    "AssetType": "UAV"
   },
   {
-    "id": 14,
-    "unitId": 6,
-    "assetSerial": "UAV-SOUTH-903",
-    "assetType": "UAV"
+    "Id": 14,
+    "UnitId": 6,
+    "AssetSerial": "UAV-SOUTH-903",
+    "AssetType": "UAV"
   },
   {
-    "id": 15,
-    "unitId": 7,
-    "assetSerial": "UAV-EAST-379",
-    "assetType": "UAV"
+    "Id": 15,
+    "UnitId": 7,
+    "AssetSerial": "UAV-EAST-379",
+    "AssetType": "UAV"
   },
   {
-    "id": 16,
-    "unitId": 8,
-    "assetSerial": "UAV-CENTRAL-854",
-    "assetType": "UAV"
+    "Id": 16,
+    "UnitId": 8,
+    "AssetSerial": "UAV-CENTRAL-854",
+    "AssetType": "UAV"
   },
   {
-    "id": 17,
-    "unitId": 8,
-    "assetSerial": "UAV-SOUTH-627",
-    "assetType": "UAV"
+    "Id": 17,
+    "UnitId": 8,
+    "AssetSerial": "UAV-SOUTH-627",
+    "AssetType": "UAV"
   },
   {
-    "id": 18,
-    "unitId": 8,
-    "assetSerial": "SENSOR-COAST-009",
-    "assetType": "PerimeterSensor"
+    "Id": 18,
+    "UnitId": 8,
+    "AssetSerial": "SENSOR-COAST-009",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 19,
-    "unitId": 9,
-    "assetSerial": "SENSOR-COAST-307",
-    "assetType": "PerimeterSensor"
+    "Id": 19,
+    "UnitId": 9,
+    "AssetSerial": "SENSOR-COAST-307",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 20,
-    "unitId": 9,
-    "assetSerial": "SENSOR-NORTH-962",
-    "assetType": "PerimeterSensor"
+    "Id": 20,
+    "UnitId": 9,
+    "AssetSerial": "SENSOR-NORTH-962",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 21,
-    "unitId": 9,
-    "assetSerial": "SENSOR-SOUTH-119",
-    "assetType": "PerimeterSensor"
+    "Id": 21,
+    "UnitId": 9,
+    "AssetSerial": "SENSOR-SOUTH-119",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 22,
-    "unitId": 10,
-    "assetSerial": "SENSOR-COAST-160",
-    "assetType": "PerimeterSensor"
+    "Id": 22,
+    "UnitId": 10,
+    "AssetSerial": "SENSOR-COAST-160",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 23,
-    "unitId": 11,
-    "assetSerial": "UAV-COAST-216",
-    "assetType": "UAV"
+    "Id": 23,
+    "UnitId": 11,
+    "AssetSerial": "UAV-COAST-216",
+    "AssetType": "UAV"
   },
   {
-    "id": 24,
-    "unitId": 11,
-    "assetSerial": "SENSOR-EAST-704",
-    "assetType": "PerimeterSensor"
+    "Id": 24,
+    "UnitId": 11,
+    "AssetSerial": "SENSOR-EAST-704",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 25,
-    "unitId": 11,
-    "assetSerial": "SENSOR-SOUTH-518",
-    "assetType": "PerimeterSensor"
+    "Id": 25,
+    "UnitId": 11,
+    "AssetSerial": "SENSOR-SOUTH-518",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 26,
-    "unitId": 11,
-    "assetSerial": "UAV-NORTH-095",
-    "assetType": "UAV"
+    "Id": 26,
+    "UnitId": 11,
+    "AssetSerial": "UAV-NORTH-095",
+    "AssetType": "UAV"
   },
   {
-    "id": 27,
-    "unitId": 11,
-    "assetSerial": "SENSOR-SOUTH-046",
-    "assetType": "PerimeterSensor"
+    "Id": 27,
+    "UnitId": 11,
+    "AssetSerial": "SENSOR-SOUTH-046",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 28,
-    "unitId": 11,
-    "assetSerial": "UAV-EAST-653",
-    "assetType": "UAV"
+    "Id": 28,
+    "UnitId": 11,
+    "AssetSerial": "UAV-EAST-653",
+    "AssetType": "UAV"
   },
   {
-    "id": 29,
-    "unitId": 12,
-    "assetSerial": "SENSOR-EAST-760",
-    "assetType": "PerimeterSensor"
+    "Id": 29,
+    "UnitId": 12,
+    "AssetSerial": "SENSOR-EAST-760",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 30,
-    "unitId": 13,
-    "assetSerial": "UAV-CENTRAL-575",
-    "assetType": "UAV"
+    "Id": 30,
+    "UnitId": 13,
+    "AssetSerial": "UAV-CENTRAL-575",
+    "AssetType": "UAV"
   },
   {
-    "id": 31,
-    "unitId": 14,
-    "assetSerial": "UAV-NORTH-968",
-    "assetType": "UAV"
+    "Id": 31,
+    "UnitId": 14,
+    "AssetSerial": "UAV-NORTH-968",
+    "AssetType": "UAV"
   },
   {
-    "id": 32,
-    "unitId": 14,
-    "assetSerial": "SENSOR-EAST-559",
-    "assetType": "PerimeterSensor"
+    "Id": 32,
+    "UnitId": 14,
+    "AssetSerial": "SENSOR-EAST-559",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 33,
-    "unitId": 15,
-    "assetSerial": "UAV-SOUTH-597",
-    "assetType": "UAV"
+    "Id": 33,
+    "UnitId": 15,
+    "AssetSerial": "UAV-SOUTH-597",
+    "AssetType": "UAV"
   },
   {
-    "id": 34,
-    "unitId": 16,
-    "assetSerial": "SENSOR-CENTRAL-131",
-    "assetType": "PerimeterSensor"
+    "Id": 34,
+    "UnitId": 16,
+    "AssetSerial": "SENSOR-CENTRAL-131",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 35,
-    "unitId": 17,
-    "assetSerial": "UAV-SOUTH-921",
-    "assetType": "UAV"
+    "Id": 35,
+    "UnitId": 17,
+    "AssetSerial": "UAV-SOUTH-921",
+    "AssetType": "UAV"
   },
   {
-    "id": 36,
-    "unitId": 17,
-    "assetSerial": "SENSOR-NORTH-921",
-    "assetType": "PerimeterSensor"
+    "Id": 36,
+    "UnitId": 17,
+    "AssetSerial": "SENSOR-NORTH-921",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 37,
-    "unitId": 19,
-    "assetSerial": "UAV-EAST-683",
-    "assetType": "UAV"
+    "Id": 37,
+    "UnitId": 19,
+    "AssetSerial": "UAV-EAST-683",
+    "AssetType": "UAV"
   },
   {
-    "id": 38,
-    "unitId": 20,
-    "assetSerial": "UAV-COAST-906",
-    "assetType": "UAV"
+    "Id": 38,
+    "UnitId": 20,
+    "AssetSerial": "UAV-COAST-906",
+    "AssetType": "UAV"
   },
   {
-    "id": 39,
-    "unitId": 21,
-    "assetSerial": "SENSOR-COAST-768",
-    "assetType": "PerimeterSensor"
+    "Id": 39,
+    "UnitId": 21,
+    "AssetSerial": "SENSOR-COAST-768",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 40,
-    "unitId": 21,
-    "assetSerial": "UAV-EAST-886",
-    "assetType": "UAV"
+    "Id": 40,
+    "UnitId": 21,
+    "AssetSerial": "UAV-EAST-886",
+    "AssetType": "UAV"
   },
   {
-    "id": 41,
-    "unitId": 21,
-    "assetSerial": "UAV-EAST-903",
-    "assetType": "UAV"
+    "Id": 41,
+    "UnitId": 21,
+    "AssetSerial": "UAV-EAST-903",
+    "AssetType": "UAV"
   },
   {
-    "id": 42,
-    "unitId": 22,
-    "assetSerial": "UAV-EAST-755",
-    "assetType": "UAV"
+    "Id": 42,
+    "UnitId": 22,
+    "AssetSerial": "UAV-EAST-755",
+    "AssetType": "UAV"
   },
   {
-    "id": 43,
-    "unitId": 22,
-    "assetSerial": "SENSOR-CENTRAL-822",
-    "assetType": "PerimeterSensor"
+    "Id": 43,
+    "UnitId": 22,
+    "AssetSerial": "SENSOR-CENTRAL-822",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 44,
-    "unitId": 22,
-    "assetSerial": "SENSOR-EAST-274",
-    "assetType": "PerimeterSensor"
+    "Id": 44,
+    "UnitId": 22,
+    "AssetSerial": "SENSOR-EAST-274",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 45,
-    "unitId": 23,
-    "assetSerial": "UAV-NORTH-392",
-    "assetType": "UAV"
+    "Id": 45,
+    "UnitId": 23,
+    "AssetSerial": "UAV-NORTH-392",
+    "AssetType": "UAV"
   },
   {
-    "id": 46,
-    "unitId": 26,
-    "assetSerial": "SENSOR-CENTRAL-228",
-    "assetType": "PerimeterSensor"
+    "Id": 46,
+    "UnitId": 26,
+    "AssetSerial": "SENSOR-CENTRAL-228",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 47,
-    "unitId": 26,
-    "assetSerial": "UAV-CENTRAL-359",
-    "assetType": "UAV"
+    "Id": 47,
+    "UnitId": 26,
+    "AssetSerial": "UAV-CENTRAL-359",
+    "AssetType": "UAV"
   },
   {
-    "id": 48,
-    "unitId": 26,
-    "assetSerial": "UAV-EAST-229",
-    "assetType": "UAV"
+    "Id": 48,
+    "UnitId": 26,
+    "AssetSerial": "UAV-EAST-229",
+    "AssetType": "UAV"
   },
   {
-    "id": 49,
-    "unitId": 27,
-    "assetSerial": "UAV-EAST-409",
-    "assetType": "UAV"
+    "Id": 49,
+    "UnitId": 27,
+    "AssetSerial": "UAV-EAST-409",
+    "AssetType": "UAV"
   },
   {
-    "id": 50,
-    "unitId": 28,
-    "assetSerial": "UAV-NORTH-991",
-    "assetType": "UAV"
+    "Id": 50,
+    "UnitId": 28,
+    "AssetSerial": "UAV-NORTH-991",
+    "AssetType": "UAV"
   },
   {
-    "id": 51,
-    "unitId": 28,
-    "assetSerial": "SENSOR-SOUTH-657",
-    "assetType": "PerimeterSensor"
+    "Id": 51,
+    "UnitId": 28,
+    "AssetSerial": "SENSOR-SOUTH-657",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 52,
-    "unitId": 28,
-    "assetSerial": "UAV-COAST-340",
-    "assetType": "UAV"
+    "Id": 52,
+    "UnitId": 28,
+    "AssetSerial": "UAV-COAST-340",
+    "AssetType": "UAV"
   },
   {
-    "id": 53,
-    "unitId": 29,
-    "assetSerial": "SENSOR-NORTH-899",
-    "assetType": "PerimeterSensor"
+    "Id": 53,
+    "UnitId": 29,
+    "AssetSerial": "SENSOR-NORTH-899",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 54,
-    "unitId": 29,
-    "assetSerial": "SENSOR-EAST-595",
-    "assetType": "PerimeterSensor"
+    "Id": 54,
+    "UnitId": 29,
+    "AssetSerial": "SENSOR-EAST-595",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 55,
-    "unitId": 30,
-    "assetSerial": "SENSOR-SOUTH-040",
-    "assetType": "PerimeterSensor"
+    "Id": 55,
+    "UnitId": 30,
+    "AssetSerial": "SENSOR-SOUTH-040",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 56,
-    "unitId": 31,
-    "assetSerial": "UAV-CENTRAL-354",
-    "assetType": "UAV"
+    "Id": 56,
+    "UnitId": 31,
+    "AssetSerial": "UAV-CENTRAL-354",
+    "AssetType": "UAV"
   },
   {
-    "id": 57,
-    "unitId": 31,
-    "assetSerial": "SENSOR-SOUTH-447",
-    "assetType": "PerimeterSensor"
+    "Id": 57,
+    "UnitId": 31,
+    "AssetSerial": "SENSOR-SOUTH-447",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 58,
-    "unitId": 31,
-    "assetSerial": "SENSOR-COAST-119",
-    "assetType": "PerimeterSensor"
+    "Id": 58,
+    "UnitId": 31,
+    "AssetSerial": "SENSOR-COAST-119",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 59,
-    "unitId": 31,
-    "assetSerial": "UAV-COAST-195",
-    "assetType": "UAV"
+    "Id": 59,
+    "UnitId": 31,
+    "AssetSerial": "UAV-COAST-195",
+    "AssetType": "UAV"
   },
   {
-    "id": 60,
-    "unitId": 31,
-    "assetSerial": "UAV-CENTRAL-002",
-    "assetType": "UAV"
+    "Id": 60,
+    "UnitId": 31,
+    "AssetSerial": "UAV-CENTRAL-002",
+    "AssetType": "UAV"
   },
   {
-    "id": 61,
-    "unitId": 31,
-    "assetSerial": "UAV-COAST-704",
-    "assetType": "UAV"
+    "Id": 61,
+    "UnitId": 31,
+    "AssetSerial": "UAV-COAST-704",
+    "AssetType": "UAV"
   },
   {
-    "id": 62,
-    "unitId": 31,
-    "assetSerial": "SENSOR-EAST-373",
-    "assetType": "PerimeterSensor"
+    "Id": 62,
+    "UnitId": 31,
+    "AssetSerial": "SENSOR-EAST-373",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 63,
-    "unitId": 33,
-    "assetSerial": "UAV-SOUTH-639",
-    "assetType": "UAV"
+    "Id": 63,
+    "UnitId": 33,
+    "AssetSerial": "UAV-SOUTH-639",
+    "AssetType": "UAV"
   },
   {
-    "id": 64,
-    "unitId": 34,
-    "assetSerial": "UAV-NORTH-738",
-    "assetType": "UAV"
+    "Id": 64,
+    "UnitId": 34,
+    "AssetSerial": "UAV-NORTH-738",
+    "AssetType": "UAV"
   },
   {
-    "id": 65,
-    "unitId": 34,
-    "assetSerial": "SENSOR-COAST-317",
-    "assetType": "PerimeterSensor"
+    "Id": 65,
+    "UnitId": 34,
+    "AssetSerial": "SENSOR-COAST-317",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 66,
-    "unitId": 34,
-    "assetSerial": "SENSOR-SOUTH-413",
-    "assetType": "PerimeterSensor"
+    "Id": 66,
+    "UnitId": 34,
+    "AssetSerial": "SENSOR-SOUTH-413",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 67,
-    "unitId": 35,
-    "assetSerial": "SENSOR-COAST-131",
-    "assetType": "PerimeterSensor"
+    "Id": 67,
+    "UnitId": 35,
+    "AssetSerial": "SENSOR-COAST-131",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 68,
-    "unitId": 37,
-    "assetSerial": "UAV-CENTRAL-694",
-    "assetType": "UAV"
+    "Id": 68,
+    "UnitId": 37,
+    "AssetSerial": "UAV-CENTRAL-694",
+    "AssetType": "UAV"
   },
   {
-    "id": 69,
-    "unitId": 38,
-    "assetSerial": "SENSOR-EAST-631",
-    "assetType": "PerimeterSensor"
+    "Id": 69,
+    "UnitId": 38,
+    "AssetSerial": "SENSOR-EAST-631",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 70,
-    "unitId": 38,
-    "assetSerial": "SENSOR-CENTRAL-562",
-    "assetType": "PerimeterSensor"
+    "Id": 70,
+    "UnitId": 38,
+    "AssetSerial": "SENSOR-CENTRAL-562",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 71,
-    "unitId": 39,
-    "assetSerial": "SENSOR-SOUTH-294",
-    "assetType": "PerimeterSensor"
+    "Id": 71,
+    "UnitId": 39,
+    "AssetSerial": "SENSOR-SOUTH-294",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 72,
-    "unitId": 39,
-    "assetSerial": "UAV-COAST-622",
-    "assetType": "UAV"
+    "Id": 72,
+    "UnitId": 39,
+    "AssetSerial": "UAV-COAST-622",
+    "AssetType": "UAV"
   },
   {
-    "id": 73,
-    "unitId": 39,
-    "assetSerial": "SENSOR-CENTRAL-453",
-    "assetType": "PerimeterSensor"
+    "Id": 73,
+    "UnitId": 39,
+    "AssetSerial": "SENSOR-CENTRAL-453",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 74,
-    "unitId": 40,
-    "assetSerial": "UAV-EAST-524",
-    "assetType": "UAV"
+    "Id": 74,
+    "UnitId": 40,
+    "AssetSerial": "UAV-EAST-524",
+    "AssetType": "UAV"
   },
   {
-    "id": 75,
-    "unitId": 41,
-    "assetSerial": "UAV-EAST-675",
-    "assetType": "UAV"
+    "Id": 75,
+    "UnitId": 41,
+    "AssetSerial": "UAV-EAST-675",
+    "AssetType": "UAV"
   },
   {
-    "id": 76,
-    "unitId": 41,
-    "assetSerial": "UAV-COAST-680",
-    "assetType": "UAV"
+    "Id": 76,
+    "UnitId": 41,
+    "AssetSerial": "UAV-COAST-680",
+    "AssetType": "UAV"
   },
   {
-    "id": 77,
-    "unitId": 41,
-    "assetSerial": "SENSOR-SOUTH-096",
-    "assetType": "PerimeterSensor"
+    "Id": 77,
+    "UnitId": 41,
+    "AssetSerial": "SENSOR-SOUTH-096",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 78,
-    "unitId": 41,
-    "assetSerial": "SENSOR-EAST-689",
-    "assetType": "PerimeterSensor"
+    "Id": 78,
+    "UnitId": 41,
+    "AssetSerial": "SENSOR-EAST-689",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 79,
-    "unitId": 42,
-    "assetSerial": "UAV-EAST-151",
-    "assetType": "UAV"
+    "Id": 79,
+    "UnitId": 42,
+    "AssetSerial": "UAV-EAST-151",
+    "AssetType": "UAV"
   },
   {
-    "id": 80,
-    "unitId": 60,
-    "assetSerial": "UAV-EAST-487",
-    "assetType": "UAV"
+    "Id": 80,
+    "UnitId": 60,
+    "AssetSerial": "UAV-EAST-487",
+    "AssetType": "UAV"
   },
   {
-    "id": 81,
-    "unitId": 64,
-    "assetSerial": "SENSOR-NORTH-467",
-    "assetType": "PerimeterSensor"
+    "Id": 81,
+    "UnitId": 64,
+    "AssetSerial": "SENSOR-NORTH-467",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 82,
-    "unitId": 67,
-    "assetSerial": "UAV-COAST-200",
-    "assetType": "UAV"
+    "Id": 82,
+    "UnitId": 67,
+    "AssetSerial": "UAV-COAST-200",
+    "AssetType": "UAV"
   },
   {
-    "id": 83,
-    "unitId": 71,
-    "assetSerial": "SENSOR-CENTRAL-507",
-    "assetType": "PerimeterSensor"
+    "Id": 83,
+    "UnitId": 71,
+    "AssetSerial": "SENSOR-CENTRAL-507",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 84,
-    "unitId": 72,
-    "assetSerial": "UAV-EAST-672",
-    "assetType": "UAV"
+    "Id": 84,
+    "UnitId": 72,
+    "AssetSerial": "UAV-EAST-672",
+    "AssetType": "UAV"
   },
   {
-    "id": 85,
-    "unitId": 72,
-    "assetSerial": "SENSOR-NORTH-798",
-    "assetType": "PerimeterSensor"
+    "Id": 85,
+    "UnitId": 72,
+    "AssetSerial": "SENSOR-NORTH-798",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 86,
-    "unitId": 72,
-    "assetSerial": "UAV-EAST-824",
-    "assetType": "UAV"
+    "Id": 86,
+    "UnitId": 72,
+    "AssetSerial": "UAV-EAST-824",
+    "AssetType": "UAV"
   },
   {
-    "id": 87,
-    "unitId": 72,
-    "assetSerial": "SENSOR-COAST-476",
-    "assetType": "PerimeterSensor"
+    "Id": 87,
+    "UnitId": 72,
+    "AssetSerial": "SENSOR-COAST-476",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 88,
-    "unitId": 72,
-    "assetSerial": "UAV-EAST-940",
-    "assetType": "UAV"
+    "Id": 88,
+    "UnitId": 72,
+    "AssetSerial": "UAV-EAST-940",
+    "AssetType": "UAV"
   },
   {
-    "id": 89,
-    "unitId": 72,
-    "assetSerial": "SENSOR-CENTRAL-137",
-    "assetType": "PerimeterSensor"
+    "Id": 89,
+    "UnitId": 72,
+    "AssetSerial": "SENSOR-CENTRAL-137",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 90,
-    "unitId": 72,
-    "assetSerial": "SENSOR-COAST-573",
-    "assetType": "PerimeterSensor"
+    "Id": 90,
+    "UnitId": 72,
+    "AssetSerial": "SENSOR-COAST-573",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 91,
-    "unitId": 78,
-    "assetSerial": "SENSOR-CENTRAL-628",
-    "assetType": "PerimeterSensor"
+    "Id": 91,
+    "UnitId": 78,
+    "AssetSerial": "SENSOR-CENTRAL-628",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 92,
-    "unitId": 79,
-    "assetSerial": "SENSOR-COAST-437",
-    "assetType": "PerimeterSensor"
+    "Id": 92,
+    "UnitId": 79,
+    "AssetSerial": "SENSOR-COAST-437",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 93,
-    "unitId": 84,
-    "assetSerial": "SENSOR-COAST-457",
-    "assetType": "PerimeterSensor"
+    "Id": 93,
+    "UnitId": 84,
+    "AssetSerial": "SENSOR-COAST-457",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 94,
-    "unitId": 84,
-    "assetSerial": "SENSOR-CENTRAL-461",
-    "assetType": "PerimeterSensor"
+    "Id": 94,
+    "UnitId": 84,
+    "AssetSerial": "SENSOR-CENTRAL-461",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 95,
-    "unitId": 84,
-    "assetSerial": "UAV-EAST-861",
-    "assetType": "UAV"
+    "Id": 95,
+    "UnitId": 84,
+    "AssetSerial": "UAV-EAST-861",
+    "AssetType": "UAV"
   },
   {
-    "id": 96,
-    "unitId": 84,
-    "assetSerial": "SENSOR-COAST-497",
-    "assetType": "PerimeterSensor"
+    "Id": 96,
+    "UnitId": 84,
+    "AssetSerial": "SENSOR-COAST-497",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 97,
-    "unitId": 84,
-    "assetSerial": "SENSOR-SOUTH-451",
-    "assetType": "PerimeterSensor"
+    "Id": 97,
+    "UnitId": 84,
+    "AssetSerial": "SENSOR-SOUTH-451",
+    "AssetType": "PerimeterSensor"
   },
   {
-    "id": 98,
-    "unitId": 84,
-    "assetSerial": "UAV-SOUTH-241",
-    "assetType": "UAV"
+    "Id": 98,
+    "UnitId": 84,
+    "AssetSerial": "UAV-SOUTH-241",
+    "AssetType": "UAV"
   },
   {
-    "id": 99,
-    "unitId": 84,
-    "assetSerial": "UAV-SOUTH-915",
-    "assetType": "UAV"
+    "Id": 99,
+    "UnitId": 84,
+    "AssetSerial": "UAV-SOUTH-915",
+    "AssetType": "UAV"
   },
   {
-    "id": 100,
-    "unitId": 92,
-    "assetSerial": "UAV-EAST-155",
-    "assetType": "UAV"
+    "Id": 100,
+    "UnitId": 92,
+    "AssetSerial": "UAV-EAST-155",
+    "AssetType": "UAV"
   }
 ]

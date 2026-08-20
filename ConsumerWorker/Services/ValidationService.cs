@@ -21,14 +21,14 @@ public class ValidationService
             var report = JsonSerializer.Deserialize<FieldReport>(jsonMessage);
             if (report == null)
             {
-                Console.WriteLine("⚠ Failed to deserialize field report");
+                Console.WriteLine("Failed to deserialize field report");
                 return null;
             }
             return report;
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"✗ Deserialization error: {ex.Message}");
+            Console.WriteLine($"Deserialization error: {ex.Message}");
             return null;
         }
     }
@@ -40,14 +40,14 @@ public class ValidationService
             var asset = await _dbContext.Assets.FindAsync(assetId);
             if (asset == null)
             {
-                Console.WriteLine($"⚠ Asset not found: {assetId}");
+                Console.WriteLine($"Asset not found: {assetId}");
                 return false;
             }
             return true;
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"✗ Asset validation error: {ex.Message}");
+            Console.WriteLine($"Asset validation error: {ex.Message}");
             return false;
         }
     }

@@ -25,7 +25,6 @@ public class PerimeterSensorProcessor : IAssetProcessor
     {
         var normalized = rawValue.Trim().ToLower();
 
-        // Verified if matches known patterns
         if (normalized == "good" || normalized == "gud")
         {
             return true;
@@ -36,7 +35,6 @@ public class PerimeterSensorProcessor : IAssetProcessor
             return true;
         }
 
-        // Unrecognized value: NOT verified
         return false;
     }
 
@@ -44,14 +42,11 @@ public class PerimeterSensorProcessor : IAssetProcessor
     {
         var normalized = rawValue.Trim().ToLower();
 
-        // Check for "Good" variations
         if (normalized == "good" || normalized == "gud")
         {
             return ProcessedStatus.Stable;
         }
 
-        // Check for "Bad" variations or any other value
-        // Both "Bad" and unrecognized values result in Warning
         return ProcessedStatus.Warning;
     }
 }

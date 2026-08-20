@@ -15,7 +15,7 @@ public class MessageProcessingOrchestrator
 
     public async Task StartProcessingAsync(CancellationToken cancellationToken)
     {
-        Console.WriteLine("🚀 Message processing orchestrator started");
+        Console.WriteLine("Message processing orchestrator started");
 
         while (!cancellationToken.IsCancellationRequested)
         {
@@ -24,11 +24,11 @@ public class MessageProcessingOrchestrator
             if (message == null)
                 continue;
 
-            Console.WriteLine("📨 Received message");
+            Console.WriteLine("Received message");
 
             await _dataProcessingService.ProcessFieldReportAsync(message);
         }
 
-        Console.WriteLine("🛑 Message processing orchestrator stopped");
+        Console.WriteLine("Message processing orchestrator stopped");
     }
 }

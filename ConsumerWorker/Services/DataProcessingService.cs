@@ -40,12 +40,12 @@ public class DataProcessingService
 
             await UpdateAssetLiveStatusAsync(assetLiveStatus);
 
-            Console.WriteLine($"✓ Processed report for Asset {assetLiveStatus.AssetId}: {assetLiveStatus.ProcessedStatus} (Verified: {assetLiveStatus.IsVerified})");
+            Console.WriteLine($"Processed report for Asset {assetLiveStatus.AssetId}: {assetLiveStatus.ProcessedStatus} (Verified: {assetLiveStatus.IsVerified})");
             return true;
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"✗ Error processing field report: {ex.Message}");
+            Console.WriteLine($"Error processing field report: {ex.Message}");
             return false;
         }
     }
@@ -56,7 +56,7 @@ public class DataProcessingService
         {
             if (!_processors.TryGetValue(report.AssetType, out var processor))
             {
-                Console.WriteLine($"⚠ Unknown asset type: {report.AssetType}");
+                Console.WriteLine($"Unknown asset type: {report.AssetType}");
                 return null;
             }
 
@@ -64,7 +64,7 @@ public class DataProcessingService
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"✗ Report processing error: {ex.Message}");
+            Console.WriteLine($"Report processing error: {ex.Message}");
             return null;
         }
     }
@@ -93,7 +93,7 @@ public class DataProcessingService
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"✗ Database update error: {ex.Message}");
+            Console.WriteLine($"Database update error: {ex.Message}");
             throw;
         }
     }
