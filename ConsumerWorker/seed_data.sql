@@ -1,36 +1,12 @@
--- ============================================================
--- SECTION 1: DATABASE SETUP
--- ============================================================
-
--- Create the database required for the system.
 DROP DATABASE IF EXISTS testDb;
 CREATE DATABASE testDb;
 USE testDb;
-
-
-
--- ============================================================
--- SECTION 2: UNITS TABLE
--- ============================================================
-
--- Create the Units table.
--- Define all required columns, data types, constraints,
--- and the primary key according to the project specification.
 
 CREATE TABLE IF NOT EXISTS Units (
     Id INT PRIMARY KEY,
     UnitName VARCHAR(255) NOT NULL,
     Sector VARCHAR(100) NOT NULL
 );
-
-
--- ============================================================
--- SECTION 3: ASSETS TABLE
--- ============================================================
-
--- Create the Assets table.
--- Define all required columns, data types, constraints,
--- and the primary key according to the project specification.
 
 CREATE TABLE IF NOT EXISTS Assets (
     Id INT PRIMARY KEY,
@@ -39,15 +15,6 @@ CREATE TABLE IF NOT EXISTS Assets (
     Type INT NOT NULL DEFAULT 0,
     FOREIGN KEY (UnitId) REFERENCES Units(Id)
 );
-
-
--- ============================================================
--- SECTION 4: ASSETLIVESTATUSES TABLE
--- ============================================================
-
--- Create the AssetLiveStatuses table.
--- Define all required columns, data types, constraints,
--- and the primary key according to the project specification.
 
 CREATE TABLE IF NOT EXISTS AssetLiveStatuses (
     Id INT PRIMARY KEY AUTO_INCREMENT,

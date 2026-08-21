@@ -6,6 +6,10 @@ namespace ConsumerWorker.Services;
 
 public class UAVProcessor : IAssetProcessor
 {
+    private const int MIN_BATTERY_LEVEL = 0;
+    private const int MAX_BATTERY_LEVEL = 100;
+    private const int LOW_BATTERY_THRESHOLD = 20;
+
     public string AssetType => "UAV";
 
     public AssetLiveStatus ProcessReport(FieldReport report)
@@ -28,7 +32,7 @@ public class UAVProcessor : IAssetProcessor
     {
         if (int.TryParse(rawValue, out int batteryLevel))
         {
-            return batteryLevel >= 0 && batteryLevel <= 100;
+            return batteryLevel >= MIN_BATTERY_LEVEL && batteryLevel <= MAX_BATTERY_LEVEL;
         }
         return false;
     }
@@ -42,7 +46,7 @@ public class UAVProcessor : IAssetProcessor
 
         int batteryLevel = int.Parse(rawValue);
 
-        if (batteryLevel >= 20)
+        if (batteryLevel >= LOW_BATTERY_THRESHOLD)
         {
             return ProcessedStatus.Stable;
         }
