@@ -8,9 +8,9 @@ public class KafkaProducerService
     private readonly string _bootstrapServers;
     private readonly IProducer<Null, string> _producer;
 
-    public KafkaProducerService(string bootstrapServers)
+    public KafkaProducerService(ConfigurationService configuration )
     {
-        _bootstrapServers = bootstrapServers;
+        _bootstrapServers = configuration.KafkaBootstrapServers;
 
         var config = new ProducerConfig { BootstrapServers = _bootstrapServers };
         _producer = new ProducerBuilder<Null, string>(config).Build();
