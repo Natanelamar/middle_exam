@@ -54,8 +54,8 @@ CREATE TABLE IF NOT EXISTS AssetLiveStatuses (
     AssetId INT NOT NULL,
     AssetType VARCHAR(50) NOT NULL,
     RawValue VARCHAR(255) NOT NULL,
-    ProcessedStatus INT NOT NULL,
-    IsVerified BOOLEAN NOT NULL DEFAULT FALSE,
+    ProcessedStatus VARCHAR(50) NOT NULL,
+    IsVerified VARCHAR(10) NOT NULL,
     LastUpdate DATETIME NOT NULL,
     UNIQUE KEY UK_AssetLiveStatuses_AssetId (AssetId),
     FOREIGN KEY (AssetId) REFERENCES Assets(Id) ON DELETE CASCADE
