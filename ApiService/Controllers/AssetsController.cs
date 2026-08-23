@@ -40,10 +40,16 @@ public class AssetsController : ControllerBase
     }
 
     [HttpPost("units")]
-    public async Task<IActionResult> CreateUnit([FromBody] Unit unit)
+    public async Task<IActionResult> CreateUnit([FromBody] CreateUnitDto unitDto)
     {
-        if (!ModelState.IsValid)
-            return BadRequest(ModelState);
+        if (string.IsNullOrWhiteSpace(unitDto.UnitName))
+            return BadRequest("UnitName is required");
+        
+        var unit = new Unit
+        {
+            UnitName = unitDto.UnitName,
+            Sector = unitDto.Sector
+        };
 
         await _unitRepository.AddAsync(unit);
         return StatusCode(201);
@@ -55,8 +61,11 @@ public class AssetsController : ControllerBase
         if (id <= 0)
             return BadRequest("Invalid Id");
 
-        if (!ModelState.IsValid)
-            return BadRequest(ModelState);
+        if (asset == null)
+            return BadRequest("Asset is required");
+
+        if (string.IsNullOrWhiteSpace(asset.AssetSerial))
+            return BadRequest("AssetSerial is required");
 
         var existing = await _assetRepository.GetByIdAsync(id);
         if (existing == null)

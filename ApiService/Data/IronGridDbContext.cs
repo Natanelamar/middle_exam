@@ -32,5 +32,17 @@ public class IronGridDbContext : DbContext
         modelBuilder.Entity<AssetLiveStatus>()
             .HasIndex(als => als.AssetId)
             .IsUnique();
+
+        modelBuilder.Entity<Asset>()
+            .Property(a => a.Type)
+            .HasConversion<string>();
+
+        modelBuilder.Entity<AssetLiveStatus>(entity =>
+        {
+            entity.Property(x => x.ProcessedStatus)
+                .HasConversion<string>();
+            entity.Property(x => x.IsVerified)
+                .HasConversion<string>();
+        });
     }
 }

@@ -7,7 +7,7 @@ namespace ApiService.Models;
 
 public class Asset
 {
-    [Key]
+    [Required]
     public int Id { get; set; }
 
     [Required]

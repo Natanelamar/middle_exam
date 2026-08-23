@@ -1,11 +1,10 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace ApiService.Models;
+namespace ApiService.DTOs;
 
-public class Unit
+public class CreateUnitDto
 {
-    [Required]
-    public int Id { get; set; } 
+
 
     [Required]
     [MaxLength(255)]
@@ -15,5 +14,4 @@ public class Unit
     [MaxLength(100)]
     public string Sector { get; set; } = "General";
 
-    public ICollection<Asset> Assets { get; set; } = new List<Asset>();
 }
