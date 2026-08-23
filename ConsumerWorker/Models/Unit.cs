@@ -4,7 +4,7 @@ namespace ConsumerWorker.Models;
 
 public class Unit
 {
-    [Key]
+    [Required]
     public int Id { get; set; }
 
     [Required]
