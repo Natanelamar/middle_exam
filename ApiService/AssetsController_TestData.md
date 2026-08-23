@@ -109,7 +109,7 @@
   {
     "unitId": 2,
     "assetSerial": "UAV-NORTH-999",
-    "type": 0
+    "type": "UAV"
   }
   ```
 - **Expected Status:** `200 OK`
@@ -119,11 +119,11 @@
     "id": 1,
     "unitId": 2,
     "assetSerial": "UAV-NORTH-999",
-    "type": 0
+    "type": "UAV"
   }
   ```
 
-**הערה:** `type` יכול להיות מספר (`0` = UAV, `1` = PerimeterSensor) או מחרוזת (`"UAV"`, `"PerimeterSensor"`).
+**הערה:** `type` צריך להיות מחרוזת (`"UAV"`, `"PerimeterSensor"`).
 
 ### 3.2 עדכון עם סוג כמחרוזת
 - **Method:** `PUT`

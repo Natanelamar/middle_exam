@@ -16,6 +16,7 @@ public class AssetRepository : IRepository<Asset>
     public async Task<Asset?> GetByIdAsync(int id)
     {
         return await _context.Assets
+            .AsNoTracking()
             .Include(a => a.Unit)
             .Include(a => a.CurrentStatus)
             .FirstOrDefaultAsync(a => a.Id == id);
@@ -38,6 +39,11 @@ public class AssetRepository : IRepository<Asset>
 
     public async Task<Asset> UpdateAsync(Asset entity)
     {
+        var tracked = _context.ChangeTracker.Entries<Asset>()
+            .FirstOrDefault(e => e.Entity.Id == entity.Id);
+        if (tracked != null)
+            _context.Entry(tracked.Entity).State = EntityState.Detached;
+
         _context.Assets.Update(entity);
         await _context.SaveChangesAsync();
         return entity;
