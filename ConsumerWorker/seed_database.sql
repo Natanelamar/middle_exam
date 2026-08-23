@@ -3,8 +3,8 @@
 -- ============================================================
 
 -- Create the database required for the system.
-DROP DATABASE IF EXISTS testDb;
-CREATE DATABASE testDb;
+-- DROP DATABASE IF EXISTS testDb;
+CREATE DATABASE  IF NOT EXISTS testDb;
 USE testDb;
 
 
