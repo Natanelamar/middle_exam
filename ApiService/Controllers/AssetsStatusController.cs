@@ -2,6 +2,7 @@ using ApiService.DTOs;
 using ApiService.Enums;
 using ApiService.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using ApiService.Services;
 
 namespace ApiService.Controllers;
 
@@ -11,11 +12,13 @@ public class AssetsStatusController : ControllerBase
 {
     private readonly AssetRepository _assetRepository;
     private readonly AssetLiveStatusRepository _statusRepository;
+    private readonly RedisCacheService _cache;
 
-    public AssetsStatusController(AssetRepository assetRepository, AssetLiveStatusRepository statusRepository)
+    public AssetsStatusController(AssetRepository assetRepository, AssetLiveStatusRepository statusRepository, RedisCacheService cache)
     {
         _assetRepository = assetRepository;
         _statusRepository = statusRepository;
+        _cache = cache;
     }
 
     [HttpGet]
@@ -83,6 +86,10 @@ public class AssetsStatusController : ControllerBase
     {
         if (id <= 0)
             return BadRequest("Invalid Id");
+        var cacheKey = $"asset-status-{id}";
+        var cached = await _cache.GetAsync<AssetStatusDto>(cacheKey);
+        if (cached != null)
+            return Ok(cached);
 
         var status = await _statusRepository.GetByAssetIdAsync(id);
         if (status == null)
@@ -107,6 +114,8 @@ public class AssetsStatusController : ControllerBase
             },
             LastUpdate = status.LastUpdate
         };
+
+        await _cache.SetAsync(cacheKey, dto);
 
         return Ok(dto);
     }

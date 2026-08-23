@@ -4,6 +4,7 @@ using ApiService.Enums;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace ApiService.Controllers;
 
 [ApiController]
@@ -12,9 +13,12 @@ public class OperationsReportsController : ControllerBase
 {
     private readonly IronGridDbContext _context;
 
+
+
     public OperationsReportsController(IronGridDbContext context)
     {
         _context = context;
+      
     }
 
     [HttpGet("critical-assets")]
