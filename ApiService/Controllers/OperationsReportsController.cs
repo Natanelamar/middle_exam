@@ -20,23 +20,25 @@ public class OperationsReportsController : ControllerBase
     [HttpGet("critical-assets")]
     public async Task<IActionResult> GetCriticalAssets()
     {
-        var criticalAssets = await (
-            from asset in _context.Assets
-            join status in _context.AssetLiveStatuses on asset.Id equals status.AssetId
-            join unit in _context.Units on asset.UnitId equals unit.Id
-            where status.ProcessedStatus == ProcessedStatus.Warning || status.IsVerified == false
-            select new CriticalAssetDto
+        var criticalAssets = await _context.Assets
+            .AsNoTracking()
+            .Include(a => a.Unit)
+            .Include(a => a.CurrentStatus)
+            .Where(a => a.CurrentStatus != null &&
+                        (a.CurrentStatus.ProcessedStatus == ProcessedStatus.Warning ||
+                         !a.CurrentStatus.IsVerified))
+            .Select(a => new CriticalAssetDto
             {
-                AssetId = asset.Id,
-                AssetSerial = asset.AssetSerial,
-                AssetType = asset.Type.ToString(),
-                UnitName = unit.UnitName,
-                Sector = unit.Sector,
-                ProcessedStatus = status.ProcessedStatus.ToString(),
-                IsVerified = status.IsVerified,
-                LastUpdate = status.LastUpdate
-            }
-        ).ToListAsync();
+                AssetId = a.Id,
+                AssetSerial = a.AssetSerial,
+                AssetType = a.Type.ToString(),
+                UnitName = a.Unit != null ? a.Unit.UnitName : "",
+                Sector = a.Unit != null ? a.Unit.Sector : "",
+                ProcessedStatus = a.CurrentStatus!.ProcessedStatus.ToString(),
+                IsVerified = a.CurrentStatus!.IsVerified,
+                LastUpdate = a.CurrentStatus!.LastUpdate
+            })
+            .ToListAsync();
 
         return Ok(criticalAssets);
     }
@@ -48,21 +50,20 @@ public class OperationsReportsController : ControllerBase
         if (!unitExists)
             return NotFound();
 
-        var unitAssets = await (
-            from asset in _context.Assets
-            join status in _context.AssetLiveStatuses on asset.Id equals status.AssetId into statusGroup
-            from status in statusGroup.DefaultIfEmpty()
-            where asset.UnitId == unitId
-            select new UnitAssetDto
+        var unitAssets = await _context.Assets
+            .AsNoTracking()
+            .Where(a => a.UnitId == unitId)
+            .Include(a => a.CurrentStatus)
+            .Select(a => new UnitAssetDto
             {
-                AssetId = asset.Id,
-                AssetSerial = asset.AssetSerial,
-                AssetType = asset.Type.ToString(),
-                ProcessedStatus = status != null ? status.ProcessedStatus.ToString() : null,
-                IsVerified = status != null ? status.IsVerified : (bool?)null,
-                LastUpdate = status != null ? status.LastUpdate : (DateTime?)null
-            }
-        ).ToListAsync();
+                AssetId = a.Id,
+                AssetSerial = a.AssetSerial,
+                AssetType = a.Type.ToString(),
+                ProcessedStatus = a.CurrentStatus != null ? a.CurrentStatus.ProcessedStatus.ToString() : null,
+                IsVerified = a.CurrentStatus != null ? a.CurrentStatus.IsVerified : null,
+                LastUpdate = a.CurrentStatus != null ? a.CurrentStatus.LastUpdate : null
+            })
+            .ToListAsync();
 
         return Ok(unitAssets);
     }
@@ -70,24 +71,21 @@ public class OperationsReportsController : ControllerBase
     [HttpGet("summary-by-unit")]
     public async Task<IActionResult> GetSummaryByUnit()
     {
-        var summary = await (
-            from unit in _context.Units
-            join asset in _context.Assets on unit.Id equals asset.UnitId into assetGroup
-            from asset in assetGroup.DefaultIfEmpty()
-            join status in _context.AssetLiveStatuses on asset.Id equals status.AssetId into statusGroup
-            from status in statusGroup.DefaultIfEmpty()
-            group new { asset, status } by new { unit.Id, unit.UnitName, unit.Sector } into g
-            select new UnitSummaryDto
+        var summary = await _context.Units
+            .AsNoTracking()
+            .Include(u => u.Assets)
+                .ThenInclude(a => a.CurrentStatus)
+            .Select(u => new UnitSummaryDto
             {
-                UnitId = g.Key.Id,
-                UnitName = g.Key.UnitName,
-                Sector = g.Key.Sector,
-                TotalAssets = g.Count(x => x.asset != null),
-                StableAssets = g.Count(x => x.status != null && x.status.ProcessedStatus == ProcessedStatus.Stable),
-                WarningAssets = g.Count(x => x.status != null && x.status.ProcessedStatus == ProcessedStatus.Warning),
-                UnverifiedAssets = g.Count(x => x.status != null && x.status.IsVerified == false)
-            }
-        ).ToListAsync();
+                UnitId = u.Id,
+                UnitName = u.UnitName,
+                Sector = u.Sector,
+                TotalAssets = u.Assets.Count,
+                StableAssets = u.Assets.Count(a => a.CurrentStatus != null && a.CurrentStatus.ProcessedStatus == ProcessedStatus.Stable),
+                WarningAssets = u.Assets.Count(a => a.CurrentStatus != null && a.CurrentStatus.ProcessedStatus == ProcessedStatus.Warning),
+                UnverifiedAssets = u.Assets.Count(a => a.CurrentStatus != null && !a.CurrentStatus.IsVerified)
+            })
+            .ToListAsync();
 
         return Ok(summary);
     }

@@ -288,3 +288,121 @@ curl -X DELETE http://localhost:5000/api/assets/1
 - ה-DB צריך להיות מאותחל עם `seed_database.sql` או `seed_data.sql` המעודכן.
 - עמודת `Type` בטבלת `Assets` היא `VARCHAR(50)` והערכים המותרים הם `UAV` ו-`PerimeterSensor`.
 - הקונטרולר תומך ב-`Type` כ-`enum` בקוד, אבל שומר אותו כמחרוזת ב-DB בעזרת `HasConversion<string>()`.
+
+---
+
+## 7. בדיקות ל-AssetsStatusController
+
+**בסיס URL לדוגמה:** `http://localhost:5000/api/assets-status`
+
+### 7.1 קבלת כל המצבים
+- **Method:** `GET`
+- **URL:** `http://localhost:5000/api/assets-status`
+- **Expected Status:** `200 OK`
+- **Expected Body (רשימה, דוגמה לפריט אחד):**
+  ```json
+  [
+    {
+      "assetId": 1,
+      "assetSerial": "SENSOR-NORTH-872",
+      "assetType": "PerimeterSensor",
+      "unitName": "Alpha Unit",
+      "sector": "North",
+      "rawValue": "42.5",
+      "processedStatus": "Stable",
+      "isVerified": true,
+      "asset": {
+        "id": 1,
+        "unitId": 1,
+        "assetSerial": "SENSOR-NORTH-872",
+        "type": "PerimeterSensor"
+      },
+      "lastUpdate": "2026-08-23T10:00:00"
+    }
+  ]
+  ```
+
+### 7.2 סינון לפי סטטוס
+- **Method:** `GET`
+- **URL:** `http://localhost:5000/api/assets-status/status?status=Stable`
+- **Expected Status:** `200 OK`
+- **Expected Body:** רשימה של סטטוסים שבהם `ProcessedStatus` = `Stable`
+
+**ערכים חוקיים ל-`status`:** `Stable`, `Warning`.
+
+### 7.3 חסר פרמטר status
+- **Method:** `GET`
+- **URL:** `http://localhost:5000/api/assets-status/status`
+- **Expected Status:** `400 Bad Request`
+- **Expected Body:**
+  ```
+  Status is required
+  ```
+
+### 7.4 ערך status לא חוקי
+- **Method:** `GET`
+- **URL:** `http://localhost:5000/api/assets-status/status?status=InvalidStatus`
+- **Expected Status:** `400 Bad Request`
+- **Expected Body:**
+  ```
+  Invalid status value
+  ```
+
+### 7.5 קבלת מצב לפי Asset ID
+- **Method:** `GET`
+- **URL:** `http://localhost:5000/api/assets-status/1`
+- **Expected Status:** `200 OK`
+- **Expected Body (דוגמה):**
+  ```json
+  {
+    "assetId": 1,
+    "assetSerial": "SENSOR-NORTH-872",
+    "assetType": "PerimeterSensor",
+    "unitName": "Alpha Unit",
+    "sector": "North",
+    "rawValue": "42.5",
+    "processedStatus": "Stable",
+    "isVerified": true,
+    "asset": {
+      "id": 1,
+      "unitId": 1,
+      "assetSerial": "SENSOR-NORTH-872",
+      "type": "PerimeterSensor"
+    },
+    "lastUpdate": "2026-08-23T10:00:00"
+  }
+  ```
+
+### 7.6 Asset ID לא חוקי
+- **Method:** `GET`
+- **URL:** `http://localhost:5000/api/assets-status/0`
+- **Expected Status:** `400 Bad Request`
+- **Expected Body:**
+  ```
+  Invalid Id
+  ```
+
+### 7.7 Asset ID לא קיים
+- **Method:** `GET`
+- **URL:** `http://localhost:5000/api/assets-status/9999`
+- **Expected Status:** `404 Not Found`
+- **Expected Body:** ריק
+
+---
+
+## 8. דוגמאות לבדיקה עם curl ל-AssetsStatusController
+
+### 8.1 כל המצבים
+```bash
+curl -X GET http://localhost:5000/api/assets-status
+```
+
+### 8.2 סינון לפי סטטוס
+```bash
+curl -X GET "http://localhost:5000/api/assets-status/status?status=Stable"
+```
+
+### 8.3 מצב לפי Asset ID
+```bash
+curl -X GET http://localhost:5000/api/assets-status/1
+```

@@ -10,5 +10,6 @@ public class AssetStatusDto
     public string RawValue { get; set; } = string.Empty;
     public string ProcessedStatus { get; set; } = string.Empty;
     public bool IsVerified { get; set; }
+    public AssetDto? Asset { get; set; }
     public DateTime LastUpdate { get; set; }
 }
