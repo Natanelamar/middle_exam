@@ -5,7 +5,7 @@ namespace ApiService.Models;
 public class Unit
 {
     [Required]
-    public int Id { get; set; } 
+    public int Id { get; set; }
 
     [Required]
     [MaxLength(255)]
