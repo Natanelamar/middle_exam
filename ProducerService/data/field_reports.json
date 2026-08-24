@@ -1,0 +1,602 @@
+[
+  {
+    "AssetId": 87,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "Bad",
+    "Timestamp": "2026-08-18T08:17:52Z"
+  },
+  {
+    "AssetId": 38,
+    "AssetType": "UAV",
+    "RawValue": "error",
+    "Timestamp": "2026-08-18T16:16:00Z"
+  },
+  {
+    "AssetId": 47,
+    "AssetType": "UAV",
+    "RawValue": "67",
+    "Timestamp": "2026-08-18T18:44:00Z"
+  },
+  {
+    "AssetId": 78,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "Bad",
+    "Timestamp": "2026-08-18T09:03:16Z"
+  },
+  {
+    "AssetId": 100,
+    "AssetType": "UAV",
+    "RawValue": "250",
+    "Timestamp": "2026-08-18T20:09:33Z"
+  },
+  {
+    "AssetId": 6,
+    "AssetType": "UAV",
+    "RawValue": "9",
+    "Timestamp": "2026-08-18T07:58:04Z"
+  },
+  {
+    "AssetId": 68,
+    "AssetType": "UAV",
+    "RawValue": "12",
+    "Timestamp": "2026-08-18T16:28:55Z"
+  },
+  {
+    "AssetId": 31,
+    "AssetType": "UAV",
+    "RawValue": "unknown",
+    "Timestamp": "2026-08-18T13:13:15Z"
+  },
+  {
+    "AssetId": 59,
+    "AssetType": "UAV",
+    "RawValue": "7",
+    "Timestamp": "2026-08-18T07:23:00Z"
+  },
+  {
+    "AssetId": 61,
+    "AssetType": "UAV",
+    "RawValue": "9",
+    "Timestamp": "2026-08-18T07:51:18Z"
+  },
+  {
+    "AssetId": 72,
+    "AssetType": "UAV",
+    "RawValue": "3",
+    "Timestamp": "2026-08-18T21:28:44Z"
+  },
+  {
+    "AssetId": 35,
+    "AssetType": "UAV",
+    "RawValue": "fault",
+    "Timestamp": "2026-08-18T20:29:41Z"
+  },
+  {
+    "AssetId": 65,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "gud",
+    "Timestamp": "2026-08-18T06:44:51Z"
+  },
+  {
+    "AssetId": 15,
+    "AssetType": "UAV",
+    "RawValue": "84",
+    "Timestamp": "2026-08-18T18:02:33Z"
+  },
+  {
+    "AssetId": 76,
+    "AssetType": "UAV",
+    "RawValue": "73",
+    "Timestamp": "2026-08-18T17:47:17Z"
+  },
+  {
+    "AssetId": 40,
+    "AssetType": "UAV",
+    "RawValue": "75",
+    "Timestamp": "2026-08-18T20:58:12Z"
+  },
+  {
+    "AssetId": 13,
+    "AssetType": "UAV",
+    "RawValue": "14",
+    "Timestamp": "2026-08-18T12:35:36Z"
+  },
+  {
+    "AssetId": 56,
+    "AssetType": "UAV",
+    "RawValue": "42",
+    "Timestamp": "2026-08-18T18:52:34Z"
+  },
+  {
+    "AssetId": 97,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "bad",
+    "Timestamp": "2026-08-18T19:21:30Z"
+  },
+  {
+    "AssetId": 4,
+    "AssetType": "UAV",
+    "RawValue": "200",
+    "Timestamp": "2026-08-18T17:12:44Z"
+  },
+  {
+    "AssetId": 81,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "good",
+    "Timestamp": "2026-08-18T14:27:45Z"
+  },
+  {
+    "AssetId": 52,
+    "AssetType": "UAV",
+    "RawValue": "-1",
+    "Timestamp": "2026-08-18T11:52:02Z"
+  },
+  {
+    "AssetId": 51,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "OK",
+    "Timestamp": "2026-08-18T11:04:39Z"
+  },
+  {
+    "AssetId": 86,
+    "AssetType": "UAV",
+    "RawValue": "98",
+    "Timestamp": "2026-08-18T19:39:43Z"
+  },
+  {
+    "AssetId": 71,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "Good",
+    "Timestamp": "2026-08-18T18:09:50Z"
+  },
+  {
+    "AssetId": 10,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "broken",
+    "Timestamp": "2026-08-18T14:59:54Z"
+  },
+  {
+    "AssetId": 58,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "good",
+    "Timestamp": "2026-08-18T14:52:32Z"
+  },
+  {
+    "AssetId": 37,
+    "AssetType": "UAV",
+    "RawValue": "96",
+    "Timestamp": "2026-08-18T12:11:44Z"
+  },
+  {
+    "AssetId": 96,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "offline",
+    "Timestamp": "2026-08-18T18:45:52Z"
+  },
+  {
+    "AssetId": 77,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "BAD",
+    "Timestamp": "2026-08-18T06:11:05Z"
+  },
+  {
+    "AssetId": 16,
+    "AssetType": "UAV",
+    "RawValue": "72",
+    "Timestamp": "2026-08-18T07:33:30Z"
+  },
+  {
+    "AssetId": 94,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "BAD",
+    "Timestamp": "2026-08-18T14:53:39Z"
+  },
+  {
+    "AssetId": 22,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "bed",
+    "Timestamp": "2026-08-18T18:34:19Z"
+  },
+  {
+    "AssetId": 34,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "great",
+    "Timestamp": "2026-08-18T14:09:31Z"
+  },
+  {
+    "AssetId": 26,
+    "AssetType": "UAV",
+    "RawValue": "51",
+    "Timestamp": "2026-08-18T11:21:23Z"
+  },
+  {
+    "AssetId": 18,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "bad",
+    "Timestamp": "2026-08-18T11:34:27Z"
+  },
+  {
+    "AssetId": 57,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "bad",
+    "Timestamp": "2026-08-18T14:36:55Z"
+  },
+  {
+    "AssetId": 48,
+    "AssetType": "UAV",
+    "RawValue": "?",
+    "Timestamp": "2026-08-18T13:44:45Z"
+  },
+  {
+    "AssetId": 95,
+    "AssetType": "UAV",
+    "RawValue": "78",
+    "Timestamp": "2026-08-18T12:01:18Z"
+  },
+  {
+    "AssetId": 66,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "GOOD",
+    "Timestamp": "2026-08-18T10:55:54Z"
+  },
+  {
+    "AssetId": 98,
+    "AssetType": "UAV",
+    "RawValue": "10",
+    "Timestamp": "2026-08-18T08:11:47Z"
+  },
+  {
+    "AssetId": 17,
+    "AssetType": "UAV",
+    "RawValue": "5",
+    "Timestamp": "2026-08-18T08:10:35Z"
+  },
+  {
+    "AssetId": 83,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "gud",
+    "Timestamp": "2026-08-18T09:29:12Z"
+  },
+  {
+    "AssetId": 41,
+    "AssetType": "UAV",
+    "RawValue": "16",
+    "Timestamp": "2026-08-18T11:02:00Z"
+  },
+  {
+    "AssetId": 82,
+    "AssetType": "UAV",
+    "RawValue": "32",
+    "Timestamp": "2026-08-18T16:51:51Z"
+  },
+  {
+    "AssetId": 80,
+    "AssetType": "UAV",
+    "RawValue": "49",
+    "Timestamp": "2026-08-18T21:09:27Z"
+  },
+  {
+    "AssetId": 5,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "Good",
+    "Timestamp": "2026-08-18T12:34:10Z"
+  },
+  {
+    "AssetId": 21,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "bad",
+    "Timestamp": "2026-08-18T18:53:20Z"
+  },
+  {
+    "AssetId": 2,
+    "AssetType": "UAV",
+    "RawValue": "?",
+    "Timestamp": "2026-08-18T06:49:42Z"
+  },
+  {
+    "AssetId": 23,
+    "AssetType": "UAV",
+    "RawValue": "4",
+    "Timestamp": "2026-08-18T11:19:05Z"
+  },
+  {
+    "AssetId": 19,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "none",
+    "Timestamp": "2026-08-18T16:00:00Z"
+  },
+  {
+    "AssetId": 19,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "great",
+    "Timestamp": "2026-08-18T20:30:28Z"
+  },
+  {
+    "AssetId": 24,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "Good",
+    "Timestamp": "2026-08-18T11:00:00Z"
+  },
+  {
+    "AssetId": 24,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "good",
+    "Timestamp": "2026-08-18T12:25:31Z"
+  },
+  {
+    "AssetId": 36,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "Good",
+    "Timestamp": "2026-08-18T07:00:00Z"
+  },
+  {
+    "AssetId": 36,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "BAD",
+    "Timestamp": "2026-08-18T10:05:15Z"
+  },
+  {
+    "AssetId": 42,
+    "AssetType": "UAV",
+    "RawValue": "83",
+    "Timestamp": "2026-08-18T07:00:00Z"
+  },
+  {
+    "AssetId": 42,
+    "AssetType": "UAV",
+    "RawValue": "69",
+    "Timestamp": "2026-08-18T11:28:58Z"
+  },
+  {
+    "AssetId": 64,
+    "AssetType": "UAV",
+    "RawValue": "86",
+    "Timestamp": "2026-08-18T13:00:00Z"
+  },
+  {
+    "AssetId": 64,
+    "AssetType": "UAV",
+    "RawValue": "91",
+    "Timestamp": "2026-08-18T14:48:13Z"
+  },
+  {
+    "AssetId": 67,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "Good",
+    "Timestamp": "2026-08-18T16:00:00Z"
+  },
+  {
+    "AssetId": 67,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "GOOD",
+    "Timestamp": "2026-08-18T17:10:00Z"
+  },
+  {
+    "AssetId": 73,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "bed",
+    "Timestamp": "2026-08-18T12:00:00Z"
+  },
+  {
+    "AssetId": 73,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "bad",
+    "Timestamp": "2026-08-18T15:44:55Z"
+  },
+  {
+    "AssetId": 11,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "good",
+    "Timestamp": "2026-08-18T07:07:34Z"
+  },
+  {
+    "AssetId": 11,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "BAD",
+    "Timestamp": "2026-08-18T08:14:41Z"
+  },
+  {
+    "AssetId": 11,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "bed",
+    "Timestamp": "2026-08-18T09:09:58Z"
+  },
+  {
+    "AssetId": 44,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "GOOD",
+    "Timestamp": "2026-08-18T08:28:07Z"
+  },
+  {
+    "AssetId": 44,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "good",
+    "Timestamp": "2026-08-18T09:29:44Z"
+  },
+  {
+    "AssetId": 44,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "good",
+    "Timestamp": "2026-08-18T10:19:44Z"
+  },
+  {
+    "AssetId": 32,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "gud",
+    "Timestamp": "2026-08-18T10:38:02Z"
+  },
+  {
+    "AssetId": 32,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "bed",
+    "Timestamp": "2026-08-18T11:56:27Z"
+  },
+  {
+    "AssetId": 32,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "Bad",
+    "Timestamp": "2026-08-18T12:47:20Z"
+  },
+  {
+    "AssetId": 12,
+    "AssetType": "UAV",
+    "RawValue": "66",
+    "Timestamp": "2026-08-18T06:02:48Z"
+  },
+  {
+    "AssetId": 12,
+    "AssetType": "UAV",
+    "RawValue": "60",
+    "Timestamp": "2026-08-18T07:48:11Z"
+  },
+  {
+    "AssetId": 12,
+    "AssetType": "UAV",
+    "RawValue": "65",
+    "Timestamp": "2026-08-18T08:30:33Z"
+  },
+  {
+    "AssetId": 92,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "gud",
+    "Timestamp": "2026-08-18T10:30:22Z"
+  },
+  {
+    "AssetId": 92,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "gud",
+    "Timestamp": "2026-08-18T11:26:21Z"
+  },
+  {
+    "AssetId": 92,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "Good",
+    "Timestamp": "2026-08-18T12:20:42Z"
+  },
+  {
+    "AssetId": 45,
+    "AssetType": "UAV",
+    "RawValue": "16",
+    "Timestamp": "2026-08-18T08:42:25Z"
+  },
+  {
+    "AssetId": 45,
+    "AssetType": "UAV",
+    "RawValue": "15",
+    "Timestamp": "2026-08-18T09:52:48Z"
+  },
+  {
+    "AssetId": 7,
+    "AssetType": "UAV",
+    "RawValue": "76",
+    "Timestamp": "2026-08-18T13:49:25Z"
+  },
+  {
+    "AssetId": 7,
+    "AssetType": "UAV",
+    "RawValue": "72",
+    "Timestamp": "2026-08-18T14:55:32Z"
+  },
+  {
+    "AssetId": 14,
+    "AssetType": "UAV",
+    "RawValue": "84",
+    "Timestamp": "2026-08-18T16:12:33Z"
+  },
+  {
+    "AssetId": 14,
+    "AssetType": "UAV",
+    "RawValue": "79",
+    "Timestamp": "2026-08-18T17:23:39Z"
+  },
+  {
+    "AssetId": 63,
+    "AssetType": "UAV",
+    "RawValue": "-10",
+    "Timestamp": "2026-08-18T16:35:08Z"
+  },
+  {
+    "AssetId": 63,
+    "AssetType": "UAV",
+    "RawValue": "130",
+    "Timestamp": "2026-08-18T17:59:18Z"
+  },
+  {
+    "AssetId": 63,
+    "AssetType": "UAV",
+    "RawValue": "250",
+    "Timestamp": "2026-08-18T18:28:56Z"
+  },
+  {
+    "AssetId": 55,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "GOOD",
+    "Timestamp": "2026-08-18T07:35:00Z"
+  },
+  {
+    "AssetId": 55,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "GOOD",
+    "Timestamp": "2026-08-18T08:35:26Z"
+  },
+  {
+    "AssetId": 55,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "good",
+    "Timestamp": "2026-08-18T09:05:14Z"
+  },
+  {
+    "AssetId": 79,
+    "AssetType": "UAV",
+    "RawValue": "49",
+    "Timestamp": "2026-08-18T15:00:45Z"
+  },
+  {
+    "AssetId": 79,
+    "AssetType": "UAV",
+    "RawValue": "error",
+    "Timestamp": "2026-08-18T15:03:26Z"
+  },
+  {
+    "AssetId": 79,
+    "AssetType": "UAV",
+    "RawValue": "58",
+    "Timestamp": "2026-08-18T15:08:30Z"
+  },
+  {
+    "AssetId": 25,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "gud",
+    "Timestamp": "2026-08-18T15:00:17Z"
+  },
+  {
+    "AssetId": 25,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "BAD",
+    "Timestamp": "2026-08-18T15:04:21Z"
+  },
+  {
+    "AssetId": 25,
+    "AssetType": "PerimeterSensor",
+    "RawValue": "BAD",
+    "Timestamp": "2026-08-18T15:10:17Z"
+  },
+  {
+    "AssetId": 33,
+    "AssetType": "UAV",
+    "RawValue": "96",
+    "Timestamp": "2026-08-18T12:00:55Z"
+  },
+  {
+    "AssetId": 33,
+    "AssetType": "UAV",
+    "RawValue": "82",
+    "Timestamp": "2026-08-18T12:02:28Z"
+  },
+  {
+    "AssetId": 33,
+    "AssetType": "UAV",
+    "RawValue": "66",
+    "Timestamp": "2026-08-18T12:10:30Z"
+  }
+]

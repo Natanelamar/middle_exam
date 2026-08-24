@@ -488,3 +488,13 @@ $RECYCLE.BIN/
 
 Day_1_Mission_Specification.md
 Day_2_Mission_Specification(1).md
+
+# data
+scripts/
+tests/
+
+# Helper scripts
+fix_json_case.py
+fix_field_reports.py
+verify_sql_data.py
+ConsumerWorker/verify_sql_data.py
