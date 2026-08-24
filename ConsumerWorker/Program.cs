@@ -4,57 +4,65 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-Console.WriteLine("IronGrid Consumer Worker Starting...");
+namespace ConsumerWorker;
 
-var configuration = new ConfigurationBuilder()
-    .SetBasePath(Directory.GetCurrentDirectory())
-    .AddJsonFile("appsettings.json", optional: false)
-    .Build();
-
-var services = new ServiceCollection();
-
-var connectionString = configuration.GetConnectionString("DefaultConnection");
-services.AddDbContext<IronGridDbContext>(options =>
-    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
-
-services.AddScoped<ValidationService>();
-services.AddScoped<DataProcessingService>();
-
-var kafkaBootstrapServers = configuration["Kafka:BootstrapServers"] ?? "localhost:9092";
-var kafkaGroupId = configuration["Kafka:GroupId"] ?? "irongrid-consumer-group";
-var kafkaTopics = new List<string>
+class Program
 {
-    configuration["Kafka:Topics:0"] ?? "UAV-Reports",
-    configuration["Kafka:Topics:1"] ?? "PerimeterSensor-Reports"
-};
+    static async Task Main(string[] args)
+    {
+        Console.WriteLine("=== IronGrid Consumer Worker ===\n");
 
-services.AddSingleton(new KafkaConsumerService(kafkaBootstrapServers, kafkaGroupId, kafkaTopics));
+        var configuration = new ConfigurationBuilder()
+            .SetBasePath(Directory.GetCurrentDirectory())
+            .AddJsonFile("appsettings.json", optional: false)
+            .Build();
 
-services.AddScoped<MessageProcessingOrchestrator>();
+        var services = new ServiceCollection();
 
-var serviceProvider = services.BuildServiceProvider();
+        services.AddSingleton<IConfiguration>(configuration);
+        services.AddSingleton<ConfigurationService>();
 
-Console.WriteLine("Services configured");
-Console.WriteLine("Database connection ready");
-Console.WriteLine($"Kafka configured: {kafkaBootstrapServers}");
+        var configService = services.BuildServiceProvider().GetRequiredService<ConfigurationService>();
 
-using (var scope = serviceProvider.CreateScope())
-{
-    var dbContext = scope.ServiceProvider.GetRequiredService<IronGridDbContext>();
-    Console.WriteLine("Ensuring database is created...");
-    dbContext.Database.EnsureCreated();
-    Console.WriteLine("Database and tables created successfully");
+        var optionsBuilder = new DbContextOptionsBuilder<IronGridDbContext>();
+        optionsBuilder.UseMySql(configService.ConnectionString, ServerVersion.AutoDetect(configService.ConnectionString));
+
+        using (var dbContext = new IronGridDbContext(optionsBuilder.Options))
+        {
+            Console.WriteLine("Creating database tables...");
+            dbContext.Database.EnsureCreated();
+            Console.WriteLine("✓ Database ready\n");
+        }
+
+        services.AddDbContext<IronGridDbContext>(options =>
+            options.UseMySql(configService.ConnectionString, ServerVersion.AutoDetect(configService.ConnectionString)));
+
+        services.AddSingleton<ValidationService>();
+        services.AddSingleton<DataProcessingService>();
+        services.AddSingleton<KafkaConsumerService>();
+        services.AddSingleton<MessageProcessingOrchestrator>();
+
+        var serviceProvider = services.BuildServiceProvider();
+
+        var orchestrator = serviceProvider.GetRequiredService<MessageProcessingOrchestrator>();
+
+        var cts = new CancellationTokenSource();
+        Console.CancelKeyPress += (s, e) =>
+        {
+            Console.WriteLine("\nShutdown requested...");
+            cts.Cancel();
+            e.Cancel = true;
+        };
+
+        try
+        {
+            await orchestrator.StartProcessingAsync(cts.Token);
+        }
+        catch (OperationCanceledException)
+        {
+            Console.WriteLine("✓ Consumer stopped gracefully");
+        }
+    }
 }
 
-using var scope2 = serviceProvider.CreateScope();
-var orchestrator = scope2.ServiceProvider.GetRequiredService<MessageProcessingOrchestrator>();
 
-var cts = new CancellationTokenSource();
-Console.CancelKeyPress += (s, e) =>
-{
-    Console.WriteLine("\nShutdown requested...");
-    cts.Cancel();
-    e.Cancel = true;
-};
-
-await orchestrator.StartProcessingAsync(cts.Token);

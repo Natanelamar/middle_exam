@@ -1,53 +1,20 @@
--- ============================================================
--- SECTION 1: DATABASE SETUP
--- ============================================================
-
--- Create the database required for the system.
--- DROP DATABASE IF EXISTS testDb;
-CREATE DATABASE  IF NOT EXISTS testDb;
+DROP DATABASE IF EXISTS testDb;
+CREATE DATABASE testDb;
 USE testDb;
 
-
-
--- ============================================================
--- SECTION 2: UNITS TABLE
--- ============================================================
-
--- Create the Units table.
--- Define all required columns, data types, constraints,
--- and the primary key according to the project specification.
-
 CREATE TABLE IF NOT EXISTS Units (
-    Id INT PRIMARY KEY AUTO_INCREMENT,
+    Id INT PRIMARY KEY,
     UnitName VARCHAR(255) NOT NULL,
     Sector VARCHAR(100) NOT NULL
 );
 
-
--- ============================================================
--- SECTION 3: ASSETS TABLE
--- ============================================================
-
--- Create the Assets table.
--- Define all required columns, data types, constraints,
--- and the primary key according to the project specification.
-
 CREATE TABLE IF NOT EXISTS Assets (
-    Id INT PRIMARY KEY AUTO_INCREMENT,
+    Id INT PRIMARY KEY,
     UnitId INT NOT NULL,
     AssetSerial VARCHAR(255) NOT NULL,
     Type VARCHAR(50) NOT NULL,
     FOREIGN KEY (UnitId) REFERENCES Units(Id)
 );
-
-
--- ============================================================
--- SECTION 4: ASSETLIVESTATUSES TABLE
--- ============================================================
-
--- Create the AssetLiveStatuses table.
--- Define all required columns, data types, constraints,
--- and the primary key according to the project specification.
 
 CREATE TABLE IF NOT EXISTS AssetLiveStatuses (
     Id INT PRIMARY KEY AUTO_INCREMENT,

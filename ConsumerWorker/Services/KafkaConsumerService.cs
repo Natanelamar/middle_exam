@@ -1,4 +1,5 @@
 using Confluent.Kafka;
+using ConsumerWorker.Services;
 
 namespace ConsumerWorker.Services;
 
@@ -7,20 +8,20 @@ public class KafkaConsumerService
     private readonly IConsumer<Null, string> _consumer;
     private readonly List<string> _topics;
 
-    public KafkaConsumerService(string bootstrapServers, string groupId, List<string> topics)
+    public KafkaConsumerService(ConfigurationService config)
     {
-        var config = new ConsumerConfig
+        var consumerConfig = new ConsumerConfig
         {
-            BootstrapServers = bootstrapServers,
-            GroupId = groupId,
+            BootstrapServers = config.KafkaBootstrapServers,
+            GroupId = config.KafkaGroupId,
             AutoOffsetReset = AutoOffsetReset.Earliest
         };
 
-        _consumer = new ConsumerBuilder<Null, string>(config).Build();
-        _topics = topics;
+        _consumer = new ConsumerBuilder<Null, string>(consumerConfig).Build();
+        _topics = config.KafkaTopics;
         _consumer.Subscribe(_topics);
         
-        Console.WriteLine($"Kafka Consumer initialized for topics: {string.Join(", ", _topics)}");
+        Console.WriteLine($"✓ Kafka Consumer subscribed to: {string.Join(", ", _topics)}");
     }
 
     public string? ConsumeMessage(CancellationToken cancellationToken)
